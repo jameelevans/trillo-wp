@@ -1,0 +1,114 @@
+/*
+Theme Name: Trillo Wordpress Theme
+Author: Jameel Evans
+Theme URI: http://trillo.jameelevans.com
+Author URI: http://jameelevans.com
+Description: This theme was designed and coded by Jameel Evans.
+Version: 1.0
+Text Domain: jameelevans.com
+ */
+
+ /*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+| Abstracts |
+# Variables
+# Mixins
+# Functions
+
+| Base |
+# Typography 
+# Base --> Basic definition of project
+# Animations
+# Utilities
+
+| Components |
+# Logo
+# Search
+# User Navigation
+# Side Navigation
+# Gallery
+# Hotel Overview
+# Buttons
+# List
+# Recommend
+# Review
+# CTA
+# Footer
+
+| Layout |
+
+
+| Pages |
+# Home
+
+--------------------------------------------------------------*/
+
+/*--------| Abstracts |--------*/
+
+/* Variables */
+@import "abstracts/variables";
+
+ /* Mixins */
+@import "abstracts/mixins";
+
+  /* Functions */
+ // @import "abstracts/functions";
+
+
+/*--------| Base |--------*/
+
+ /* Typography */
+@import "base/typography";
+
+ /* Global */
+ @import "base/base";
+
+/* Animations */
+@import "base/animations";
+
+/* Utilities */
+// @import "base/utilities";
+
+/*--------| Components |--------*/
+
+/* Logo */
+@import "components/logo";
+
+/* Search */
+@import "components/search";
+
+/* User Navigation */
+@import "components/user-navigation";
+
+/* Side Navigation */
+@import "components/side-navigation";
+
+/* Gallery */
+@import "components/gallery";
+
+/* Hotel Overview */
+@import "components/hotel-overview";
+
+/* Buttons */
+@import "components/buttons";
+
+/* List */
+@import "components/list";
+
+/* Recommend */
+@import "components/recommend";
+
+/* Review */
+@import "components/review";
+
+/* CTA */
+@import "components/cta";
+
+/* Footer */
+@import "components/footer";
+
+
+/*--------| Layout |--------*/
+
+ @import "layout/layout";

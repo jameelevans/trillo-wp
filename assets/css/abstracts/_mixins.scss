@@ -1,0 +1,51 @@
+@mixin font-primary {
+    font-family: $font;
+	font-display: swap;
+}
+
+@mixin font-italic {
+    font-family: $font;
+    font-display: swap;
+    font-style: italic;
+}
+
+/*
+--> DESKTOP FIRST: Media Query Manager <--
+0 - 500px --> Smallest ( 500px / 16 = 31.25em )
+500 - 600px --> Small ( 600px / 16 = 37.5em )
+600 - 900px --> Medium ( 900px / 16 = 56.25em )
+900 - 1100px --> Large ( 1100px / 16 = 68.75em )
+1100 - 1200px --> Largest ( 1200px / 16 = 75em )
+
+
+$breakpoint argument choices:
+-smallest
+-small
+-medium
+-large
+-largest
+
+ORDER: Base + Typography --> General layout + Grid --> Page + Layout --> Components
+
+--> Convert px to em for breapoints
+--> em are the best unit option versus rem for breakpoints
+--> rems dont work as expected in breakpoints (Dont use them)
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == smallest {
+        @media only screen and (max-width: 31.25em) { @content };  //500px
+    }
+    @if $breakpoint == small {
+        @media only screen and (max-width: 37.5em) { @content };  //600px
+    }
+    @if $breakpoint == medium {
+        @media only screen and (max-width: 56.25em) { @content };  //900px
+    }
+    @if $breakpoint == large {
+        @media only screen and (max-width: 68.75em) { @content };  //1100px
+    }
+    @if $breakpoint == largest {
+        @media only screen and (max-width: 75em) { @content }; //1200px
+    }
+}

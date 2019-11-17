@@ -1,0 +1,86 @@
+.overview {
+    display: flex;
+    //Vertically center along cross axis
+    align-items: center;
+    border-bottom: var(--line);
+    
+
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+
+        @include respond(small) {
+            font-size: 1.8rem;
+            padding: 1.25rem 2rem;
+        }
+    }
+
+    &__stars {
+        //Margin auto makes the element occupy only the space it needs (Great with flexbox)
+        margin-right: auto;
+        //Align all stars vertically
+        display: flex;
+       
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+        font-size: 1.2rem;
+        display: flex;
+        vertical-align: center;
+    }
+
+    &__icon-location {
+        margin-right: .5rem;
+    }
+
+    &__rating {
+        background-color: var(--color-primary);
+        margin-left: 3rem;
+        color: #fff;
+        //Allows the element to use the full height of the parent element
+        align-self: stretch;
+        padding: 0 2.25rem;
+
+        //Align the two items vertically and horizontally and breaks them into columns
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include respond(small) {
+            padding: 0 1.5rem;
+        }
+    }
+
+    &__rating-average {
+        font-size: 2.25rem;
+        font-weight: 300;
+        //Decrease space between the average and count
+        margin-bottom: -3px;
+
+        @include respond(small) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__rating-count {
+        font-size: .8rem;
+        text-transform: uppercase;
+
+        @include respond(small) {
+            font-size: .5rem;
+        }
+    }
+
+    
+}

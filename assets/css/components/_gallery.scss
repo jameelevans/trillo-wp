@@ -1,0 +1,9 @@
+.gallery {
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        //Removes white space 
+        display: block;
+    }
+}

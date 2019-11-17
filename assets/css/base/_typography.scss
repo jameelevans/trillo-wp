@@ -1,0 +1,47 @@
+@font-face {
+	@include font-primary;
+	src: url('assets/fonts/OpenSans-Light.ttf') format('ttf');
+	font-weight: 300;
+}
+
+@font-face {
+	@include font-italic;
+	src: url('assets/fonts/OpenSans-LightItalic.ttf') format('ttf');
+	font-weight: 300;
+}
+
+
+@font-face {
+	@include font-primary;
+	src: url('assets/fonts/OpenSans-Regular.ttf') format('ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	@include font-italic;
+	src: url('assets/fonts/OpenSans-Italic.ttf') format('ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	@include font-primary;
+	src: url('assets/fonts/OpenSans-Bold.ttf') format('ttf');
+	font-weight: 600;
+}
+
+@font-face {
+	@include font-italic;
+	src: url('assets/fonts/OpenSans-BoldItalic.ttf') format('ttf');
+	font-weight: 600;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+// Adds margin to bottom of all p's except the lat type 
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
